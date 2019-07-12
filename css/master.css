@@ -50,16 +50,24 @@ nav {
           justify-content: space-between; }
   nav .contact-me a {
     font-size: 2rem;
-    color: #027bff; }
+    color: #027bff;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
     nav .contact-me a i {
       font-size: 3rem;
       margin-right: 1rem; }
+    nav .contact-me a:hover {
+      color: #006ce2; }
   nav .social-icons a {
     font-size: 2rem;
-    color: #8f9ea5; }
+    color: #8f9ea5;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
     nav .social-icons a i {
       font-size: 3rem;
       margin: 0rem 1rem; }
+    nav .social-icons a:hover {
+      color: #c8cfd2; }
 
 .intro {
   border: 1px solid blue;
@@ -141,23 +149,25 @@ nav {
           -ms-flex-pack: justify;
               justify-content: space-between; }
 
-.projects .pineapple-project {
+.projects .project {
   border: 1px solid red;
   height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative; }
-  .projects .pineapple-project a {
+  .projects .project a {
     font-size: 2rem;
     font-weight: 400;
     color: #17191a; }
+
+.projects .pineapple-project {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .projects .pineapple-project .project-header {
     text-align: left;
     position: absolute;
@@ -195,22 +205,9 @@ nav {
       font-size: 1.4rem; }
 
 .projects .shack-project {
-  border: 1px solid red;
-  height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative; }
-  .projects .shack-project a {
-    font-size: 2rem;
-    font-weight: 400;
-    color: #17191a; }
+          justify-content: flex-start; }
   .projects .shack-project .project-header {
     position: absolute;
     top: 16rem;

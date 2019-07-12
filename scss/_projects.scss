@@ -1,9 +1,8 @@
 .projects {
-    .pineapple-project {
+    .project {
         border: 1px solid red;
         height: 60vh;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
         position: relative;
         a {
@@ -11,6 +10,13 @@
             font-weight: 400;
             color: $font-black;
         }
+    }
+    .pineapple-project {
+        // height: 60vh;
+        // display: flex;
+        justify-content: flex-end;
+        // align-items: center;
+        // position: relative;
         .project-header {
             text-align: left;
             position: absolute;
@@ -30,12 +36,13 @@
             }
         }
         .project-img {
-            position: relative;
-            width: 60rem;
-            height: 36rem;
-            background: url('../images/pineapple.jpg') center center no-repeat;
-            background-size: cover;
-            box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+            @include ProjectImg(pineapple);
+            // position: relative;
+            // width: 60rem;
+            // height: 36rem;
+            // background: url('../images/pineapple.jpg') center center no-repeat;
+            // background-size: cover;
+            // box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
         }
         .social-icons {
             display: flex;
@@ -49,17 +56,12 @@
         }
     }
     .shack-project {
-        border: 1px solid red;
-        height: 60vh;
-        display: flex;
+        // border: 1px solid red;
+        // height: 60vh;
+        // display: flex;
         justify-content: flex-start;
-        align-items: center;
-        position: relative;
-        a {
-            font-size: 2rem;
-            font-weight: 400;
-            color: $font-black;
-        }
+        // align-items: center;
+        // position: relative;
         .project-header {
             position: absolute;
             top: 16rem;
@@ -82,12 +84,7 @@
             }
         }
         .project-img {
-            position: relative;
-            width: 60rem;
-            height: 36rem;
-            background: url('../images/barn.jpg') center center no-repeat;
-            background-size: cover;
-            box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+            @include ProjectImg(barn);
         }
         .social-icons {
             display: flex;

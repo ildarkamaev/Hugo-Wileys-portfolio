@@ -7,23 +7,27 @@ nav {
         a {
             font-size: 2rem;
             color: $font-blue;
+            transition: all 0.3s ease-in;
             i {
                 font-size: 3rem;
                 margin-right: 1rem;
             }
-            // .contact {
-            //     font-size: 2rem;
-            //     margin-top: -4rem;
-            // }
+            &:hover {
+                color: darken($font-blue, 6);
+            }
         }
     }
     .social-icons {
         a {
             font-size: 2rem;
             color: $font-dark-grey;
+            transition: all 0.3s ease-in;
             i {
                 font-size: 3rem;
                 margin: 0rem 1rem;
+            }
+            &:hover {
+                color: lighten($font-dark-grey, 20);
             }
         }
     }
