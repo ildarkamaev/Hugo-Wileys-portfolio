@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid purple;
+    height: 40vh;
+    background: url('../icons/dribbble-icon_2.png');
+    background-position: 260% -30%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    h2 {
+        a {
+            text-align: center;
+            font-weight: 400;
+            font-size: 2rem;
+            color: $font-blue;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 4rem;
+                height: 0.5rem;
+                top: 4rem;
+                // left: 6rem;
+                background: $font-blue;
+            }
+        }
+    }
+}

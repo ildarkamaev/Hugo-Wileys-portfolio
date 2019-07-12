@@ -248,4 +248,40 @@ nav {
     right: -3rem; }
     .projects .shack-project .social-icons i {
       font-size: 1.4rem; }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid purple;
+  height: 40vh;
+  background: url("../icons/dribbble-icon_2.png");
+  background-position: 260% -30%;
+  background-size: 90%;
+  background-repeat: no-repeat; }
+  footer h2 a {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #027bff;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    footer h2 a::after {
+      content: '';
+      position: absolute;
+      width: 4rem;
+      height: 0.5rem;
+      top: 4rem;
+      background: #027bff; }
 /*# sourceMappingURL=master.css.map */
