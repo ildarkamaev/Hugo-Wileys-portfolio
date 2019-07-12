@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+h1 {
+  font-size: 6rem;
+  font-weight: 700; }
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700; }
+
+p {
+  font-size: 2rem;
+  font-weight: 300; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+  text-decoration: none; }
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background: #ffffff;
+  max-width: calc(100vw-2rem);
+  width: 80rem;
+  background: url("../images/bg.png") center center;
+  background-repeat: repeat-y;
+  background-size: cover; }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  nav .contact-me a {
+    font-size: 2rem;
+    color: #027bff; }
+    nav .contact-me a i {
+      font-size: 3rem;
+      margin-right: 1rem; }
+  nav .social-icons a {
+    font-size: 2rem;
+    color: #8f9ea5; }
+    nav .social-icons a i {
+      font-size: 3rem;
+      margin: 0rem 1rem; }
+
+.intro {
+  border: 1px solid blue;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .intro .intro-text p {
+    margin: 2rem 0rem;
+    max-width: 40rem; }
+  .intro .intro-text ul {
+    list-style: none; }
+    .intro .intro-text ul li {
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 4rem; }
+  .intro .intro-img {
+    position: relative; }
+    .intro .intro-img .front-circle {
+      position: relative;
+      width: 30rem;
+      height: 30rem;
+      background: url("../images/06.jpeg") center center no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      z-index: 999; }
+    .intro .intro-img .bg-circle {
+      position: absolute;
+      width: 30rem;
+      height: 30rem;
+      background: #027bff;
+      border-radius: 50%;
+      top: 2rem;
+      left: 2rem;
+      z-index: 1; }
+
+.skills {
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh; }
+  .skills .skills-items {
+    max-width: 60rem; }
+    .skills .skills-items h2,
+    .skills .skills-items p {
+      text-align: center;
+      margin: 1rem 0rem; }
+    .skills .skills-items .app-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin-top: 4rem;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+
+.projects .pineapple-project {
+  border: 1px solid red;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .projects .pineapple-project a {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #17191a; }
+  .projects .pineapple-project .project-header {
+    text-align: left;
+    position: absolute;
+    top: 16rem;
+    left: 0rem;
+    z-index: 2; }
+    .projects .pineapple-project .project-header a::after {
+      content: '';
+      position: absolute;
+      width: 4rem;
+      height: 0.5rem;
+      top: 8rem;
+      left: 0;
+      background: #027bff; }
+  .projects .pineapple-project .project-img {
+    position: relative;
+    width: 60rem;
+    height: 36rem;
+    background: url("../images/pineapple.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+            box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
+  .projects .pineapple-project .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    bottom: 2rem;
+    left: -3rem; }
+    .projects .pineapple-project .social-icons i {
+      font-size: 1.4rem; }
+
+.projects .shack-project {
+  border: 1px solid red;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .projects .shack-project a {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #17191a; }
+  .projects .shack-project .project-header {
+    position: absolute;
+    top: 16rem;
+    right: 0rem;
+    text-align: right;
+    z-index: 2; }
+    .projects .shack-project .project-header a {
+      text-align: right; }
+    .projects .shack-project .project-header a::after {
+      content: '';
+      position: absolute;
+      width: 4rem;
+      height: 0.5rem;
+      top: 8rem;
+      right: 0;
+      background: #027bff; }
+  .projects .shack-project .project-img {
+    position: relative;
+    width: 60rem;
+    height: 36rem;
+    background: url("../images/barn.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+            box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
+  .projects .shack-project .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    bottom: 2rem;
+    right: -3rem; }
+    .projects .shack-project .social-icons i {
+      font-size: 1.4rem; }
+/*# sourceMappingURL=master.css.map */

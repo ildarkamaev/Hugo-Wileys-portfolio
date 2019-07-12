@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: $white;
+    max-width: calc(100vw-2rem);
+    width: 80rem;
+    background: url('../images/bg.png') center center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}

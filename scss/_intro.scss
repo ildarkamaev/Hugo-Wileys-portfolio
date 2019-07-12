@@ -1,0 +1,44 @@
+.intro {
+    border: 1px solid blue;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .intro-text {
+        p {
+            margin: 2rem 0rem;
+            max-width: 40rem;
+        }
+        ul {
+            list-style: none;
+            li {
+                font-size: 2rem;
+                font-weight: 300;
+                line-height: 4rem;
+            }
+        }
+    }
+    .intro-img {
+        position: relative;
+        .front-circle {
+            position: relative;
+            width: 30rem;
+            height: 30rem;
+            background: url('../images/06.jpeg') center center no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            z-index: 999;
+        }
+        .bg-circle {
+            position: absolute;
+            width: 30rem;
+            height: 30rem;
+            background: $font-blue;
+            border-radius: 50%;
+            top: 2rem;
+            left: 2rem;
+            z-index: 1;
+        }
+    }
+}
