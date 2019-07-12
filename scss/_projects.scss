@@ -12,89 +12,21 @@
         }
     }
     .pineapple-project {
-        // height: 60vh;
-        // display: flex;
-        justify-content: flex-end;
-        // align-items: center;
-        // position: relative;
-        .project-header {
-            text-align: left;
-            position: absolute;
-            top: 16rem;
-            left: 0rem;
-            // display: inline-block;
-            // width: 40rem;
-            z-index: 2;
-            a::after {
-                content: '';
-                position: absolute;
-                width: 4rem;
-                height: 0.5rem;
-                top: 8rem;
-                left: 0;
-                background: $font-blue;
-            }
-        }
+        @include ProjectHeader(flex-end, left, left);
         .project-img {
             @include ProjectImg(pineapple);
-            // position: relative;
-            // width: 60rem;
-            // height: 36rem;
-            // background: url('../images/pineapple.jpg') center center no-repeat;
-            // background-size: cover;
-            // box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
         }
         .social-icons {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            bottom: 2rem;
-            left: -3rem;
-            i {
-                font-size: 1.4rem;
-            }
+            @include SocialIcons(left);
         }
     }
     .shack-project {
-        // border: 1px solid red;
-        // height: 60vh;
-        // display: flex;
-        justify-content: flex-start;
-        // align-items: center;
-        // position: relative;
-        .project-header {
-            position: absolute;
-            top: 16rem;
-            right: 0rem;
-            text-align: right;
-            // display: inline-block;
-            // width: 40rem;
-            z-index: 2;
-            a {
-                text-align: right;
-            }
-            a::after {
-                content: '';
-                position: absolute;
-                width: 4rem;
-                height: 0.5rem;
-                top: 8rem;
-                right: 0;
-                background: $font-blue;
-            }
-        }
+        @include ProjectHeader(flex-start, right, right);
         .project-img {
             @include ProjectImg(barn);
         }
         .social-icons {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            bottom: 2rem;
-            right: -3rem;
-            i {
-                font-size: 1.4rem;
-            }
+            @include SocialIcons(right);
         }
     }
 }

@@ -209,13 +209,11 @@ nav {
       -ms-flex-pack: start;
           justify-content: flex-start; }
   .projects .shack-project .project-header {
+    text-align: right;
     position: absolute;
     top: 16rem;
     right: 0rem;
-    text-align: right;
     z-index: 2; }
-    .projects .shack-project .project-header a {
-      text-align: right; }
     .projects .shack-project .project-header a::after {
       content: '';
       position: absolute;
