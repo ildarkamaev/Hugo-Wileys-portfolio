@@ -1,6 +1,5 @@
 .projects {
     .project {
-        border: 1px solid red;
         height: 60vh;
         display: flex;
         align-items: center;
@@ -27,6 +26,15 @@
         }
         .social-icons {
             @include SocialIcons(right);
+        }
+    }
+    .veggie-project {
+        @include ProjectHeader(flex-end, left, left);
+        .project-img {
+            @include ProjectImg(carrots);
+        }
+        .social-icons {
+            @include SocialIcons(left);
         }
     }
 }

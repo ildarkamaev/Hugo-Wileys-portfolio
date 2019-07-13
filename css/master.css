@@ -9,7 +9,16 @@ h2 {
 
 p {
   font-size: 2rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #8f9ea5; }
+
+ul {
+  list-style: none; }
+  ul li {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 4rem;
+    color: #8f9ea5; }
 
 * {
   padding: 0;
@@ -70,7 +79,6 @@ nav {
       color: #c8cfd2; }
 
 .intro {
-  border: 1px solid blue;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,34 +96,16 @@ nav {
   .intro .intro-text p {
     margin: 2rem 0rem;
     max-width: 40rem; }
-  .intro .intro-text ul {
-    list-style: none; }
-    .intro .intro-text ul li {
-      font-size: 2rem;
-      font-weight: 300;
-      line-height: 4rem; }
-  .intro .intro-img {
-    position: relative; }
-    .intro .intro-img .front-circle {
-      position: relative;
-      width: 30rem;
-      height: 30rem;
-      background: url("../images/06.jpeg") center center no-repeat;
-      background-size: cover;
-      border-radius: 50%;
-      z-index: 999; }
-    .intro .intro-img .bg-circle {
-      position: absolute;
-      width: 30rem;
-      height: 30rem;
-      background: #027bff;
-      border-radius: 50%;
-      top: 2rem;
-      left: 2rem;
-      z-index: 1; }
+  .intro .intro-img .front-circle {
+    width: 30rem;
+    height: 30rem;
+    background: url("../images/06.jpeg") center center no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 30px 30px 0px 1px #027bff;
+            box-shadow: 30px 30px 0px 1px #027bff;
+    border-radius: 50%; }
 
 .skills {
-  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +140,6 @@ nav {
               justify-content: space-between; }
 
 .projects .project {
-  border: 1px solid red;
   height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,14 +171,24 @@ nav {
       top: 8rem;
       left: 0;
       background: #027bff; }
+      .projects .pineapple-project .project-header a::after:hover {
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        -webkit-transform: scaleX(1.5);
+                transform: scaleX(1.5); }
   .projects .pineapple-project .project-img {
     position: relative;
     width: 60rem;
     height: 36rem;
     background: url("../images/pineapple.jpg") center center no-repeat;
     background-size: cover;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
-            box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
+    -webkit-transition: -webkit-box-shadow 0.3s ease-in;
+    transition: -webkit-box-shadow 0.3s ease-in;
+    transition: box-shadow 0.3s ease-in;
+    transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in; }
+    .projects .pineapple-project .project-img:hover {
+      -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+              box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
   .projects .pineapple-project .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -222,14 +221,24 @@ nav {
       top: 8rem;
       right: 0;
       background: #027bff; }
+      .projects .shack-project .project-header a::after:hover {
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        -webkit-transform: scaleX(1.5);
+                transform: scaleX(1.5); }
   .projects .shack-project .project-img {
     position: relative;
     width: 60rem;
     height: 36rem;
     background: url("../images/barn.jpg") center center no-repeat;
     background-size: cover;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
-            box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
+    -webkit-transition: -webkit-box-shadow 0.3s ease-in;
+    transition: -webkit-box-shadow 0.3s ease-in;
+    transition: box-shadow 0.3s ease-in;
+    transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in; }
+    .projects .shack-project .project-img:hover {
+      -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+              box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
   .projects .shack-project .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -242,6 +251,56 @@ nav {
     bottom: 2rem;
     right: -3rem; }
     .projects .shack-project .social-icons i {
+      font-size: 1.4rem; }
+
+.projects .veggie-project {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .projects .veggie-project .project-header {
+    text-align: left;
+    position: absolute;
+    top: 16rem;
+    left: 0rem;
+    z-index: 2; }
+    .projects .veggie-project .project-header a::after {
+      content: '';
+      position: absolute;
+      width: 4rem;
+      height: 0.5rem;
+      top: 8rem;
+      left: 0;
+      background: #027bff; }
+      .projects .veggie-project .project-header a::after:hover {
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        -webkit-transform: scaleX(1.5);
+                transform: scaleX(1.5); }
+  .projects .veggie-project .project-img {
+    position: relative;
+    width: 60rem;
+    height: 36rem;
+    background: url("../images/carrots.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-transition: -webkit-box-shadow 0.3s ease-in;
+    transition: -webkit-box-shadow 0.3s ease-in;
+    transition: box-shadow 0.3s ease-in;
+    transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in; }
+    .projects .veggie-project .project-img:hover {
+      -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+              box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
+  .projects .veggie-project .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    bottom: 2rem;
+    left: -3rem; }
+    .projects .veggie-project .social-icons i {
       font-size: 1.4rem; }
 
 footer {

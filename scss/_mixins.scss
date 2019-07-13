@@ -4,7 +4,10 @@
     height: 36rem;
     background: url('../images/#{$image}.jpg') center center no-repeat;
     background-size: cover;
-    box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+    transition: box-shadow 0.3s ease-in;
+    &:hover {
+        box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+    }
 }
 
 @mixin ProjectHeader($flex,
@@ -25,6 +28,10 @@ $position) {
             top: 8rem;
             #{$position}: 0;
             background: $font-blue;
+            &:hover {
+                transition: all 0.3s ease-in;
+                transform: scaleX(1.5);
+            }
         }
     }
 }
