@@ -28,9 +28,11 @@ $position) {
             top: 8rem;
             #{$position}: 0;
             background: $font-blue;
-            &:hover {
-                transition: all 0.3s ease-in;
-                transform: scaleX(1.5);
+            transform: scale(1);
+            transform-origin: $position;
+            transition: all 0.3s ease-in;
+            &:hover::after {
+                transform: scale(2);
             }
         }
     }
@@ -44,5 +46,8 @@ $position) {
     #{$position}: -3rem;
     i {
         font-size: 1.4rem;
+        &:hover {
+            color: lighten($font-black, 20);
+        }
     }
 }
