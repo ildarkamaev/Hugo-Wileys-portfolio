@@ -3,6 +3,9 @@ nav {
     flex-direction: row;
     margin: 2rem 0;
     justify-content: space-between;
+    @include mQ(600px) {
+        justify-content: center;
+    }
     .contact-me {
         a {
             font-size: 2rem;

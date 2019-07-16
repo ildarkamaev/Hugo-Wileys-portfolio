@@ -14,9 +14,9 @@ html {
 
 body {
     background: $white;
-    max-width: calc(100vw-2rem);
+    max-width: calc(100vw- 2rem);
     width: 80rem;
     background: url('../images/bg.png') center center;
     background-repeat: repeat-y;
-    background-size: cover;
+    // background-size: cover;
 }

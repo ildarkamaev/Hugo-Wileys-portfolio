@@ -1,3 +1,9 @@
+@mixin mQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
 @mixin ProjectImg($image) {
     position: relative;
     width: 60rem;
@@ -7,6 +13,9 @@
     transition: box-shadow 0.3s ease-in;
     &:hover {
         box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
+    }
+    @include mQ(600px) {
+        width: 100vw;
     }
 }
 
@@ -49,5 +58,8 @@ $position) {
         &:hover {
             color: lighten($font-black, 20);
         }
+    }
+    @include mQ(600px) {
+        display: none;
     }
 }

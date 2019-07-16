@@ -39,11 +39,10 @@ html {
 
 body {
   background: #ffffff;
-  max-width: calc(100vw-2rem);
+  max-width: calc(100vw- 2rem);
   width: 80rem;
   background: url("../images/bg.png") center center;
-  background-repeat: repeat-y;
-  background-size: cover; }
+  background-repeat: repeat-y; }
 
 nav {
   display: -webkit-box;
@@ -57,6 +56,11 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 600px) {
+    nav {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   nav .contact-me a {
     font-size: 2rem;
     color: #027bff;
@@ -93,10 +97,21 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 600px) {
+    .intro {
+      -ms-flex-wrap: wrap-reverse;
+          flex-wrap: wrap-reverse;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: auto; } }
   .intro .intro-text p {
     margin: 2rem 0rem;
     max-width: 40rem; }
-  .intro .intro-img .front-circle {
+    @media screen and (max-width: 600px) {
+      .intro .intro-text p {
+        max-width: 60vw; } }
+  .intro .intro-img {
     width: 30rem;
     height: 30rem;
     background: url("../images/profile.jpeg") center center no-repeat;
@@ -104,6 +119,9 @@ nav {
     -webkit-box-shadow: 30px 30px 0px 1px #027bff;
             box-shadow: 30px 30px 0px 1px #027bff;
     border-radius: 50%; }
+    @media screen and (max-width: 600px) {
+      .intro .intro-img {
+        margin: 6rem 0rem; } }
 
 .skills {
   display: -webkit-box;
@@ -122,6 +140,9 @@ nav {
   height: 80vh; }
   .skills .skills-items {
     max-width: 60rem; }
+    @media screen and (max-width: 600px) {
+      .skills .skills-items {
+        max-width: 60vw; } }
     .skills .skills-items h2,
     .skills .skills-items p {
       text-align: center;
@@ -138,6 +159,10 @@ nav {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      @media screen and (max-width: 600px) {
+        .skills .skills-items .app-icons {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
 
 .projects .project {
   height: 60vh;
@@ -193,6 +218,9 @@ nav {
     .projects .pineapple-project .project-img:hover {
       -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
               box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
+    @media screen and (max-width: 600px) {
+      .projects .pineapple-project .project-img {
+        width: 100vw; } }
   .projects .pineapple-project .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -208,6 +236,9 @@ nav {
       font-size: 1.4rem; }
       .projects .pineapple-project .social-icons i:hover {
         color: #474d50; }
+    @media screen and (max-width: 600px) {
+      .projects .pineapple-project .social-icons {
+        display: none; } }
 
 .projects .shack-project {
   -webkit-box-pack: start;
@@ -249,6 +280,9 @@ nav {
     .projects .shack-project .project-img:hover {
       -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
               box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
+    @media screen and (max-width: 600px) {
+      .projects .shack-project .project-img {
+        width: 100vw; } }
   .projects .shack-project .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -264,6 +298,9 @@ nav {
       font-size: 1.4rem; }
       .projects .shack-project .social-icons i:hover {
         color: #474d50; }
+    @media screen and (max-width: 600px) {
+      .projects .shack-project .social-icons {
+        display: none; } }
 
 .projects .veggie-project {
   -webkit-box-pack: end;
@@ -305,6 +342,9 @@ nav {
     .projects .veggie-project .project-img:hover {
       -webkit-box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5);
               box-shadow: 0px 0px 30px 0px rgba(23, 30, 36, 0.5); }
+    @media screen and (max-width: 600px) {
+      .projects .veggie-project .project-img {
+        width: 100vw; } }
   .projects .veggie-project .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -320,6 +360,9 @@ nav {
       font-size: 1.4rem; }
       .projects .veggie-project .social-icons i:hover {
         color: #474d50; }
+    @media screen and (max-width: 600px) {
+      .projects .veggie-project .social-icons {
+        display: none; } }
 
 footer {
   display: -webkit-box;
